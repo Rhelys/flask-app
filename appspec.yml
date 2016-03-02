@@ -1,17 +1,18 @@
+version: 0.0
 os: linux
 files:
-   - source: ./app.py
-     destination: /home/ec2-user/flask
-   - source: ./requirements.txt
-     destination: /home/ec2-user/flask
-   - source: ./static
-     destination: /home/ec2-user/flask/static
-   - source: ./templates
-     destination: /home/ec2-user/flask/templates
-   - source: ./scripts
-     destination: /home/ec2-user/flask/scripts/
+  - source: ./app.py
+    destination: /home/ec2-user/flask
+  - source: ./requirements.txt
+    destination: /home/ec2-user/flask
+  - source: ./static
+    destination: /home/ec2-user/flask/static
+  - source: ./templates
+    destination: /home/ec2-user/flask/templates
+  - source: ./scripts
+    destination: /home/ec2-user/flask/scripts/
 hooks:
-    ApplicationStart:
-- location: /home/ec2-user/flask/scripts/start.sh
-  timeout: 300
-  runas: root
+  ApplicationStart:
+    - location: /home/ec2-user/flask/scripts/start.sh
+      timeout: 300
+      runas: root
