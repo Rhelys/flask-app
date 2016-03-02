@@ -13,7 +13,7 @@ app.secret_key = 'why would I tell you my secret key?'
 app.config['MYSQL_DATABASE_USER'] = 'vquinn'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'password'
 app.config['MYSQL_DATABASE_DB'] = 'BucketList'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+app.config['MYSQL_DATABASE_HOST'] = 'vquinn-flask.cdhmfmzalg3v.us-west-2.rds.amazonaws.com'
 mysql.init_app(app)
 
 # Default setting
