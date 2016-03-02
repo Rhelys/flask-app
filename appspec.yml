@@ -13,6 +13,6 @@ files:
     destination: /home/ec2-user/flask/scripts/
 hooks:
   ApplicationStart:
-    - location: /home/ec2-user/flask/scripts/start.sh
+    - location: /scripts/start.sh
       timeout: 300
       runas: root
